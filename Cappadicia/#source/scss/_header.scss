@@ -1,0 +1,71 @@
+.header {
+	height: 100vh;
+	background-image: url('../image/main.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom center;
+	&__top {
+		padding: 72px 0 0 0;
+		display: flex;
+		justify-content: space-between;
+	}
+	.menu {
+	&__list {
+		li {
+			display: inline-block;
+			margin: 0 52px 0 0;
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+	&__link {
+		text-transform: uppercase;
+		line-height: 1px;
+		font-size: 24px;
+		line-height: 28px;
+		color: #000;
+		transition: all 500ms ease;
+		&:hover {
+		}
+	}
+	}
+	&__phone {
+		line-height: 1px;
+		font-size: 24px;
+		line-height: 28px;
+		color: #000;
+		padding: 0 0 0 40px;
+		position: relative;
+		&:before {
+			content: '';
+			background: url('../image/icon/phone.svg');
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			left: 0;
+		}
+	}
+	&__title {
+		font-weight: 300;
+		color: #fff;
+		padding: 152px 0 0 0;
+		text-align: center;
+		font-size: 150px;
+		line-height: 160px;
+		font-family: $title;
+		text-transform: uppercase;
+		span {
+			color: #fff;
+			display: block;
+			text-align: right;
+			font-size: 56px;
+			line-height: 66px;
+			font-weight: 300;
+			font-style: italic;
+			font-family: 'Roboto Condensed', sans-serif;
+			margin: -30px 100px 0 0;
+		}
+	}
+}
+
