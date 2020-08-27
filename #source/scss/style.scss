@@ -1,0 +1,419 @@
+//==============Normal and Fonts=======================================================//
+@import "nullstyle.css"; // Null
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+//=====================================================================//
+$title: 'Herr Von Muellerhoff', cursive;
+//=====================================================================//
+body{
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: #e5e5e5;
+}
+//===========Wrap==========================================================//
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+}
+.container {
+	max-width: 1230px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+@import 'header';
+//================Fairy-tail=====================================================//
+.page-section {
+	margin: 100px auto;
+	max-width: 1920px;
+}
+.title {
+	font-family: $title;
+	font-size: 90px;
+	line-height: 120px;
+	color: #e2ab3f;
+	margin: 0 0 30px 0;
+	span {
+		color: #000;
+		font-size: 24px;
+		line-height: 28px;
+		font-style: italic;
+		font-family: 'Roboto Condensed', sans-serif;
+	}
+}
+.fairy-tail {
+	&__title {
+		span {
+			display: block;
+			margin: -30px 0 0 100px;
+		}
+	}
+	&__inner {
+		position: relative;
+	}
+	&__slider {
+		width: 50%;
+	}
+	&__item {}
+	&__content {
+	}
+	&__container {
+		max-width: 1230px;
+		margin: 0px auto;
+		padding: 0px 15px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+	}
+	&__body {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		width: 50%;
+		margin-left: auto;
+		padding: 0 0 0 55px;
+		height: 100%;
+	}
+	&__text {
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 18px;
+		line-height: 21px;
+		font-weight: 300;
+		padding: 10px 0;
+	}
+	&__body-title {
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 18px;
+		line-height: 21px;
+		font-weight: 700;
+	}
+	&__list {
+		li {
+			margin-bottom: 10px;
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+}
+.slick-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	@media (max-width: 600px) {
+		display: none;
+	}
+}
+.slick-prev {
+	left: 0;
+}
+.slick-next {
+	right: 0;
+}
+//==================Our trip===================================================//
+.our-trip {
+	&__inner {
+		position: relative;
+	}
+	&__content {
+		font-family: 'Roboto Condensed', sans-serif;
+		width: 50%;
+		padding: 0 55px 0 0;
+	}
+	&__container {
+		max-width: 1230px;
+		padding: 0 15px;
+		margin: 0 auto;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+	&__body {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		height: 100%;
+	}
+	&__title {
+		span{
+			display: block;
+			margin: -40px 0 0 150px;
+		}
+	}
+	&__list {
+		margin: 5px 0;
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 28px;
+		li:first-child {
+			font-weight: 700;
+			margin: 0 0 20px 0;
+		}
+	}
+	&__btn {
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 28px;
+		border: 1px solid #e2ab3f;
+		padding: 11px 53px;
+		color: #000;
+		text-transform: uppercase;
+		margin: 15px 0;
+	}
+	&__slider {
+		width: 50%;
+		margin-left: auto;
+	}
+	&__slider-item {}
+}
+//======================Hotel===============================================//
+.hotel {
+	&__title {
+		span {
+			display: block;
+			margin: -40px 0 0 50px;
+		}
+	}
+	&__inner {
+		display: flex;
+	}
+	&__images {
+		margin-right: 50px;
+	}
+	&__content {
+	}
+	&__text {
+		font-family: 'Roboto Condensed', sans-serif;
+		font-weight: 300;
+		margin-bottom: 15px;
+		font-size: 22px;
+		line-height: 24px;
+	}
+	&__gallery {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space between;
+		a {
+			margin-top: 30px;
+			margin-right: 30px;
+		}
+	}
+}
+//=========================Contact============================================//
+.price {
+	background-image: url('../image/hotair.png');
+	background-position: center right 1%;
+	background-repeat: no-repeat;
+	&__title {
+		span{
+			display: block;
+			margin: -40px 0 0 40px;
+		}
+	}
+	&__inner {
+		display: flex;
+	}
+	&__on {
+		flex: 0 0 530px;
+		padding: 0 50px 0 0;
+	}
+	&__on-title {
+		font-size: 24px;
+		line-height: 28px;
+		font-weight: 700;
+		font-family: 'Roboto Condensed', sans-serif;
+		margin-bottom: 40px;
+	}
+	&__list {
+		font-size: 20px;
+		line-height: 24px;
+		font-weight: 300;
+		font-family: 'Roboto Condensed', sans-serif;
+	}
+	&__list-item {
+		font-family: 'Roboto Condensed', sans-serif;
+		font-weight: 300;
+		margin-bottom: 20px;
+	}
+	&__off {
+	}
+	&__off-title {
+		font-size: 24px;
+		line-height: 28px;
+		font-weight: 700;
+		font-family: 'Roboto Condensed', sans-serif;
+		margin-bottom: 40px;
+	}
+}
+//===========================Contacts==========================================//
+.contacts {
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 -10px;
+	}
+	&__content {
+		text-align: center;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+	}
+	&__info {
+		padding: 0 10px;
+	}
+	&__date,
+	&__price {
+		font-family: $title;
+		color: #e2ab3f;
+		font-size: 80px;
+		line-height: 90px;
+		margin-left: 120px;
+		span {
+			font-family: 'Roboto Condensed', sans-serif;
+			font-weight: 300;
+			color: #000;
+			font-size: 24px;
+			display: block;
+			margin: -45px 0 0 130px;
+			font-style: italic;
+		}
+	}
+	&__form {
+		padding: 0 10px;
+		max-width: 383px;
+		margin: 0 auto;
+	}
+	&__form-title {
+		text-transform: uppercase;
+		font-family: 'Roboto Condensed', sans-serif;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 28px;
+		margin-bottom: 50px;
+	}
+	&__form-input{
+		border: 1px solid #e2ab3f;
+		height: 40px;
+		margin-bottom: 20px;
+		display: block;
+		width: 100%;
+		padding: 0 15px;
+		font-size: 20px;
+		line-height: 28px;
+	}
+	&__form-name {}
+	&__phone {}
+	&__form-btn {
+		text-transform: uppercase;
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 18px;
+		line-height: 28px;
+		border: 1px solid #e2ab3f;
+		padding: 10px 40px;
+		font-weight: 300;
+	}
+	&__images {}
+}
+//========================Footer=============================================//
+.footer {
+	background-image: url('../image/man.jpg');
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	padding: 100px 0 0 0;
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__contacts {
+		width: 360px;
+		height: 530px;
+		background-image: url(../image/footer-air.png);
+		background-repeat: no-repeat;
+		text-align: center;
+	}
+	&__contacts-title {
+		font-family: $title;
+		font-size: 70px;
+		line-height: 75px;
+		color: #e2ab3f;
+		margin-bottom: 50px;
+		padding-top: 40px;
+	}
+	&__email,
+	&__phone {
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 18px;
+		line-height: 28px;
+		font-weight: 300;
+		font-style: italic;
+		display: inline-block;
+		padding-left: 40px;
+		position: relative;
+	}
+	&__email:before,
+	&__phone:before {
+		content: '';
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 0;
+		top: -4px;
+	}
+	&__email:before{
+		content: '';
+		background-image: url('../image/icon/mail.svg');
+	}
+	&__phone:before{
+		content: '';
+		background-image: url('../image/icon/phone.svg');
+	}
+	&__phone {
+		margin-bottom: 20px;
+	}
+	&__email {
+	}
+	&__social {
+		margin-top: 38px;
+		a{
+			margin: 0 7px;
+		}
+	}
+	&__social-link {}
+	&__text {
+		font-family: $title;
+		font-style: italic;
+		font-weight: 300;
+		font-size: 80px;
+		line-height: 85px;
+	}
+}
+//======================Adaptive===============================================//
+@import 'adaptive';
+//=====================================================================//
+
+//=====================================================================//
+//=====================================================================//
+
+
+
+
+//=====================================================================//
+
+
+
+
+
+
+//=====================================================================//
